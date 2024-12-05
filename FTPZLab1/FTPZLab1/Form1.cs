@@ -24,13 +24,6 @@ namespace FTPZLab1
                     return;
                 }
 
-                if (creditAmount < 1000) 
-                {
-                    MessageBox.Show("Кредит сумою менше 1000 гривень не видається", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
-                    return;
-                }
-
                 if (creditAmount >= 10000 && creditAmount < 20000)
                     rate -= 1;
                 else if (creditAmount >= 20000 && creditAmount < 40000)
